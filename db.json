@@ -1,0 +1,71 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "designation": "Ordinateur",
+      "prix_unitaire": 5000,
+      "categorie_id": 1
+    },
+    {
+      "id": "60a7",
+      "designation": "iphone",
+      "prix_unitaire": "20000",
+      "categorie_id": "1"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "nom": "Informatique"
+    }
+  ],
+  "parametres": [
+    {
+      "id": "1",
+      "tva_informatique": 20,
+      "tva_services": 10,
+      "tva_formation": 0
+    }
+  ],
+  "clients": [
+    {
+      "id": "1",
+      "nom": "Client Exemple",
+      "email": "client@example.com",
+      "tel": "0123456789",
+      "adresse": "123 Rue Exemple"
+    },
+    {
+      "nom": "EZ-ZAHRAOUI El-Mehdi",
+      "email": "mehdiezzahraoui35@gmail.com",
+      "tel": "0694631607",
+      "adresse": "berrechid",
+      "id": "v2jXCc8CFvM"
+    }
+  ],
+  "factures": [
+    {
+      "id": "1",
+      "numero": "INV-001",
+      "date_creation": "2023-01-01",
+      "client_id": 1,
+      "articles": [
+        {
+          "id": 1,
+          "designation": "Ordinateur",
+          "prix_unitaire": 5000,
+          "quantity": 1
+        }
+      ],
+      "total_ht": 5000,
+      "tva": 1000,
+      "total_ttc": 6000,
+      "statut": "En attente",
+      "date_depot": null,
+      "date_encaissement": null,
+      "type_virement": null,
+      "validated_by_admin": false
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
